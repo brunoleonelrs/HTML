@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    
+    <form name="signup" onsubmit="alert('Formulário enviado com sucesso!')" autocomplete="off" action="#" method="post"> 
+    <!-- ACTION: vai o endereço para onde as informação vão ser enviadas. 
+     METHOD: define o método de envio (GET ou POST), o post encapsula os dados do formulário e os envia de forma mais segura que o GET. 
+     Autocomplete: desativa o autocomplete do navegador para evitar que ele preencha os campos automaticamente ou ative ele para que guarde as informações preenchidas.
+     ONsubmit: define uma função JavaScript que é executada quando o formulário é submetido, e muito usado os comandos com iniciais ON pois eles são eventos que acontecem. -->
+        Nome: <input type="text" name="nome"><br><br>
+        Idade: <input type="number" name="idade"><br><br>
+        Senha: <input type="password" name="senha"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
