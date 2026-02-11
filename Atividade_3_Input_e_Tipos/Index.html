@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<body>
+<body> <!-- Lembrando que varia de acordo com a compatibilidade dos navegadores. -->
     <form>
-        
+        <!-- Aqui temos um input de texto, para incersão de texto. -->
+        <label>Text:</label><input type="text" /><br>
+        <!-- Abaixo temos um input de numero, podemos ver também que foi definido um minimo e máximo para o usuário. -->
+        <label>Number:</label><input type="number" min="0" max="99"/><br>
+        <!-- Temos tipos de button, o type button, que podemos inserir o value enviar que vai inserir um botão. Porém semanticamente falando, se coloca uma tag button com o texto dentro. -->
+        <label>Button:</label><input type="button" value="Enviar"/><button type="button">Enviar</button><br>
+        <!-- O input com tag range cria uma barra que podemos interagir com ela com o mouse. Também podemos acrescentar minimo e maximo se quisermos. -->
+        <label>Range:</label><input type="range" /><br>
+        <!-- O input com a tag color disponibiliza um quadrado para o usuário selecionar cor.-->
+        <label>Color:</label><input type="color" /><br>
+        <!-- Ipunt de e-mail detecta o @ para não que seja validado corretamente. -->
+        <label>E-mail:</label><input type="email" /><br>
+        <!-- Input URL, ele detecta o HTTPS para confirmar um site completo. -->
+        <label>URL:</label><input type="url" /><br>
+        <!-- Input DATE, verifica o idioma do navegador, para implementar um calendário de acordo com o idioma do usuário. Podemos usar também week (seria a semana) e month (seria o mês) que define a semanam, mas pode não funcionar em alguns navegadores. -->
+        <label>Date:</label><input type="date" /><br>
+        <!-- Input Check box, usamos muito com valores bollean para validações. -->
+        <label>Checkbox:</label><input type="checkbox" /><br>
+        <!-- Input Radio, é uma seleção de um ou outro-->
+        <label>Radio:</label><input type="radio" name="Aceita"/><input type="radio" name="NaoAceita"><br>
+        <!-- Input Hidden é não visivel ao usuário, mas ele está ali para mandar. -->
+        <label>Hidden:</label><input type="hidden" /><br>
+        <!-- Para enviar arquivos, colocando multiple, podemos selecionar vários arquivos. Pois o padrão é 1 -->
+        <label>File:</label><input type="file" multiple />
+        <!-- Campo de texto comum mas de busca, com opção para limpar busca, mas pode ter alguma incompatibilidade com alguns navegadores.-->
+        <label>Search:</label><input type="search">
     </form>
 </body>
 </html>
