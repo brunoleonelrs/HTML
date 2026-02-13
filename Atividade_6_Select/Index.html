@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="nome"><br><br>
+        <!-- Usamos o select para disponilzar as opções de cargo -->
+        <label>Cargo:</label>
+            <select name="cargo">
+                <option selected value="">Selecione o cargo</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="designer">Designer</option>
+                <option value="marketing">Marketing</option>
+                <option value="vendas">Vendas</option>
+                <!-- podemos usar 'selected' para selecionar uma opção por padrão. Podemos usar o multiple também nessa opção. -->
+            </select><br><br>
+        <label>Assunto:</label><input type="text" name="assunto"><br><br>
+        <label>Mensagem:</label>
+        <textarea name="mensagem" rows="5" cols="40"></textarea><br><br>
+        <!-- Tag textarea usada para que o usuário possa digitar uma mensagem mais longa, as propriedades rows (linhas) e cols (colunas) definem o tamanho da área de texto -->
+        <button>
+            Enviar
+        </button>
+    </form>
+</body>
+</html>
