@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido</title>
+</head>
+<body>
+    <form method="post">
+        <h3>Você selecionou Pizza de calabresa.</h3>
+        <p>Quais adicionais você deseja?</p>
+        <!-- Usamos "opcional[]" para permitir múltiplas seleções, o colchetes referencia uma lista. -->
+        <input type="checkbox" name="opcional[]" value="queijo"> Queijo extra<br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> Calabresa extra<br>
+        <input type="checkbox" name="opcional[]" value="bacon"> Bacon<br><br>
+        <p>Borda recheada?</p>
+        <!-- Usamos o mesmo nome "borda" para os radio buttons, garantindo que apenas uma opção possa ser selecionada. -->
+        <input type="radio" name="borda" value="sim"> Sim<br>
+        <input type="radio" name="borda" value="nao"> Não<br><br>
+        <p>Adicionar uma bebida?</p>
+        <input type="radio" name=""> Refrigerante<br>
+        <input type="radio" name=""> Suco<br>
+        <input type="radio" name=""> Água<br>
+        <input type="radio" name=""> Não quero bebida<br><br>
+        <input type="submit" value="Enviar Pedido">
+        <!-- Podemos usar o disable para desativar o checkbox ou radio. Mas continua aparecendo, mostrando que tem, mas no momento está indisponivel por exemplo. -->
+    </form>
+</body>
+</html>
