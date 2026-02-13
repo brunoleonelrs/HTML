@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro.</title>
+</head>
+<body> <!-- O type onsubmit, ele válida se as informações estão preenchidas. -->
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name"><br><br>
+        <label>Idade:</label><input type="number" name="idade"><br><br>
+        <label>Senha:</label><input type="password" name="senha"><br><br>
+        <!-- O botão abaixo tem a função de mostrar um alerta quando for clicado. O type button é o mais simples. -->
+        <button type="button" onclick="alert('Parabéns você foi cadastrado!')">Clique aqui</button><br><br>
+        <!-- O type reset tem a função de limpar os campos do formulário. -->
+        <button type="reset">Limpar</button>
+        <!-- O type submit tem a função de enviar os dados do formulário para o servidor. -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
